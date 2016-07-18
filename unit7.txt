@@ -1,0 +1,31 @@
+18. Explain, in detail, what happens when this script is run: 
+
+var shout = function(){   // declare a variable to equal a function.
+    var message = "HEY YOU"; // inside function variable message contains text "HEY YOU"
+    alert(message);}; //  inside function call 
+shout();
+alert(message);
+
+19. Explain, in detail, what happens when you run this script:
+
+alert("Hello"); //dialogue box pops out that says "Hello"
+var alert = 2; // Overrides the alert function and sets it to 2
+alert("World"); // this doesn't work because now the alert function is just a var that equals 2.
+
+27. Write a constructor for movie objects. A movie has a title, an MPAA rating, a list of directors, a list of producers, a studio, and a release date.
+
+function movies(title, rating, director, producer, studio, releaseDate){
+	this.movieTitle = title;
+	this.movieRating = rating;
+	this.movieDir = directos;
+	this.movieProd = producer;
+	this.movieStudio = studio;
+	this.movieDate = releaseDate;
+}
+
+var newMovie  = new movie("X-Men:Apocalypse","6of10",Bryan Singer","Bryan Singer","20th Century Fox","May 27 2016");
+
+30. JavaScript comes with a built-in object called Date, which is a constructor. Research this function and answer the following:
+(a) What does the expression new Date() produce? // it produces today's date.
+(b) What does the expression new Date( 2009,0,20) produce? // It changes the date to Jan 20th 2009.
+(c) If d1 and d2 refer to date objects, what does the expression d1. valueOf() - d2. valueOf() produce? // this will subtract the primitive value (number of millisecond since the date input)produced by d1.valueOf() with that of d2.valueOf()
